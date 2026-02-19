@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uthai Thani: Top 100 Green Destinations 2025</title>
+    <meta name="description"
+        content="Official Story of Uthai Thani Old Town - Winner of Top 100 Green Destinations Stories 2025. Discover our sustainable river livelihood.">
+
+    <!-- Open Graph / SEO -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Uthai Thani: Top 100 Green Destinations 2025">
+    <meta property="og:description"
+        content="Explore the river-based livelihood that won the world's heart. Uthai Thani Old Town, Thailand.">
+    <meta property="og:image" content="Contents/2025.jpg">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ut: {
+                            paper: '#f8f4f0',
+                            ink: '#2d2d2d',
+                            green: '#2c5e4f', /* Earthy Green */
+                            gold: '#b08968',  /* Muted Gold */
+                            clay: '#e6dcd3'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Sarabun', 'sans-serif'],
+                        script: ['Charmonman', 'cursive'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Sarabun:wght@300;400;600&display=swap');
+
+        body {
+            background-color: #f8f4f0;
+            color: #2d2d2d;
+        }
+
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 1s ease-out;
+        }
+
+        .reveal-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Minimalist Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f8f4f0;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #b08968;
+            border-radius: 4px;
+        }
+
+        .ken-burns {
+            animation: kenBurns 20s infinite alternate;
+        }
+
+        @keyframes kenBurns {
+            from {
+                transform: scale(1);
+            }
+
+            to {
+                transform: scale(1.1);
+            }
+        }
+    </style>
+</head>
+
+<body class="font-sans antialiased selection:bg-ut-green selection:text-white relative">
+    <!-- Dok Supanika Watermark -->
+    <div class="fixed inset-0 pointer-events-none z-0 opacity-[0.03]"
+        style="background-image: url('https://www.svgrepo.com/show/368630/flower.svg'); background-size: 150px; background-repeat: repeat;">
+    </div>
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 px-6 py-4 flex justify-between items-center transition-all duration-300 bg-ut-paper/90 backdrop-blur-sm border-b border-ut-green/10"
+        id="navbar">
+        <div class="flex items-center gap-4">
+            <div class="font-serif text-xl font-bold text-ut-green tracking-tight">อุทัยธานี <span
+                    class="text-ut-gold italic">เมืองเก่า</span> <span
+                    class="text-xs text-ut-ink/40 font-normal ml-2">Uthai Thani Old Town</span></div>
+        </div>
+        <div class="hidden md:flex gap-6 text-xs uppercase tracking-widest font-bold text-ut-ink/80">
+            <a href="#story" class="hover:text-ut-green transition flex flex-col items-center">
+                <span>เรื่องราว</span>
+                <span class="text-[8px] text-ut-ink/40 font-normal">The Story</span>
+            </a>
+            <a href="#river" class="hover:text-ut-green transition flex flex-col items-center">
+                <span>วิถีสายน้ำ</span>
+                <span class="text-[8px] text-ut-ink/40 font-normal">River Life</span>
+            </a>
+            <a href="#community" class="hover:text-ut-green transition flex flex-col items-center">
+                <span>ชุมชน</span>
+                <span class="text-[8px] text-ut-ink/40 font-normal">Community</span>
+            </a>
+            <a href="sustainability.html"
+                class="text-ut-gold hover:text-ut-green transition border-b border-transparent hover:border-ut-green flex flex-col items-center">
+                <span>รายงานความยั่งยืน</span>
+                <span class="text-[8px] text-ut-gold/60 font-normal">Sustainability Report</span>
+            </a>
+            <a href="#visit"
+                class="bg-ut-green text-white px-5 py-2 rounded-full hover:bg-ut-green/90 transition flex flex-col items-center leading-none justify-center h-10">
+                <span class="text-sm">มาเยี่ยมเยือน</span>
+                <span class="text-[9px] opacity-80 font-normal">Visit Us</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- 1. HERO SECTION: The Dawn -->
+    <header class="relative h-screen w-full overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 z-0">
+            <video autoplay muted loop playsinline class="w-full h-full object-cover brightness-[0.65]">
+                <source src="Contents/gi-tourism-pla-raed.mp4" type="video/mp4">
+            </video>
+            <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-ut-paper/90"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-6 max-w-4xl mx-auto space-y-8">
+            <div
+                class="inline-block px-6 py-2 border border-white/40 rounded-full bg-black/20 backdrop-blur-md text-white/90 text-sm uppercase tracking-[0.1em] shadow-xl font-sans">
+                รางวัลระดับโลก 2025
+            </div>
+            <h1 class="font-serif text-6xl md:text-8xl text-white leading-tight drop-shadow-2xl">
+                เมืองพระชนกจักรี <br> <span class="italic text-ut-gold relative inline-block text-5xl md:text-7xl">
+                    วิถีแห่งสายน้ำสะแกกรัง
+                    <svg class="absolute -bottom-4 left-0 w-full h-3 text-ut-gold/50" viewBox="0 0 100 10"
+                        preserveAspectRatio="none">
+                        <path d="M0 5 Q 50 10 100 5" stroke="currentColor" stroke-width="2" fill="none" />
+                    </svg>
+                </span>
+            </h1>
+            <p class="font-serif text-2xl md:text-3xl text-white/90 mt-6 text-shadow-md font-normal italic">
+                "Where the River Narrates Life"
+            </p>
+
+            <div class="flex items-center justify-center gap-6 pt-8">
+                <button onclick="openLightbox('Contents/gi-tourism-pla-raed.mp4')"
+                    class="group flex items-center gap-4 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 rounded-full px-8 py-4 transition-all duration-300 hover:scale-105">
+                    <div
+                        class="w-10 h-10 rounded-full bg-ut-gold flex items-center justify-center group-hover:bg-white transition">
+                        <svg class="w-4 h-4 text-white group-hover:text-ut-green fill-current ml-1" viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z" />
+                        </svg>
+                    </div>
+                    <div class="text-left">
+                        <span class="text-white block text-sm font-bold">ชมวิดีโอแนะนำ</span>
+                        <span class="text-white/60 block text-[10px] uppercase tracking-widest">Watch Story</span>
+                    </div>
+                </button>
+            </div>
+
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+                <a href="#award" class="text-white/70 hover:text-white transition">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. AWARD EXPLANATION -->
+    <section id="award" class="py-24 px-6 md:px-12 bg-ut-paper relative">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div class="reveal-on-scroll space-y-8">
+                <span class="text-ut-gold font-bold text-sm uppercase tracking-wider">Top 100 Green Destinations
+                    2025</span>
+                <h2 class="font-serif text-4xl md:text-6xl text-ut-green leading-tight">
+                    เรื่องราวความยั่งยืน <br><span class="italic">ระดับโลก</span>
+                </h2>
+                <span class="block text-2xl text-ut-green/50 italic font-serif -mt-4">A Global Story of
+                    Sustainability</span>
+                <div class="h-1 w-20 bg-ut-gold"></div>
+                <p class="text-xl text-ut-ink leading-relaxed font-normal">
+                    เมืองเก่าอุทัยธานีได้รับการประกาศเกียรติคุณให้เป็นหนึ่งใน <strong>100 แหล่งท่องเที่ยวยั่งยืนระดับโลก
+                        (Green Destinations Top 100 Stories)</strong> ประจำปี 2025
+                    รางวัลนี้ไม่ใช่เพียงแค่เรื่องการท่องเที่ยว
+                    แต่เป็นเครื่องพิสูจน์ถึงความสำเร็จในการรักษาวิถีชีวิตริมน้ำให้คงอยู่ท่ามกลางกระแสการเปลี่ยนแปลง
+                </p>
+                <p class="text-lg text-ut-ink/60 italic font-serif">
+                    "Uthai Thani Old Town has been officially recognized as one of the Top 100 Green Destinations
+                    Stories in the world for 2025."
+                </p>
+
+                <div class="grid grid-cols-2 gap-8 border-t border-ut-green/10 pt-8">
+                    <div>
+                        <div class="text-4xl font-serif text-ut-gold">100</div>
+                        <div class="text-xs uppercase tracking-wider text-ut-ink/60 mt-1">เรื่องราวสุดประทับใจ
+                            (Inspiring Stories)</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-serif text-ut-gold">Top 100</div>
+                        <div class="text-xs uppercase tracking-wider text-ut-ink/60 mt-1">ระดับโลก (Global Rank)</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal-on-scroll relative group cursor-pointer" onclick="openLightbox('Contents/2025.jpg')">
+                <div
+                    class="absolute inset-0 bg-ut-gold/10 transform rotate-3 rounded-xl transition duration-500 group-hover:rotate-6">
+                </div>
+                <img src="Contents/2025.jpg"
+                    class="relative rounded-xl shadow-2xl w-full object-cover transform transition duration-500 group-hover:-translate-y-2"
+                    alt="2025 Certificate">
+                <div class="absolute -bottom-6 -left-6 bg-white p-4 shadow-lg rounded-lg max-w-[200px] hidden md:block">
+                    <p class="font-serif italic text-sm text-ut-green">"Good Practice Story"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. RIVER & LIVELIHOOD -->
+    <section id="river" class="py-24 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20 reveal-on-scroll">
+                <span class="text-ut-green/60 uppercase tracking-widest text-sm font-bold">ชุมชนชาวแพแห่งสุดท้าย</span>
+                <h2 class="font-serif text-5xl md:text-6xl text-ut-green mt-4">วิถีแห่งสายน้ำ</h2>
+                <p class="text-2xl text-ut-green/50 italic font-serif mt-2">Living with Water</p>
+            </div>
+
+            <div class="grid md:grid-cols-12 gap-8 items-center">
+                <div class="md:col-span-7 reveal-on-scroll">
+                    <div class="relative rounded-2xl overflow-hidden shadow-xl aspect-[16/9] group cursor-pointer"
+                        onclick="openLightbox('Contents/D4.jpg')">
+                        <img src="Contents/D4.jpg"
+                            class="w-full h-full object-cover transition duration-1000 group-hover:scale-105"
+                            alt="Raft House">
+                        <div
+                            class="absolute bottom-0 text-white p-8 bg-gradient-to-t from-black/80 to-transparent w-full">
+                            <p class="font-serif text-2xl">เรือนแพสะแกกรัง</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-5 space-y-8 reveal-on-scroll">
+                    <h3 class="font-serif text-4xl text-ut-ink">มรดกที่ยังมีลมหายใจ</h3>
+                    <p class="text-ut-ink/80 leading-relaxed text-lg font-normal">
+                        ที่นี่... ชีวิตยังคงลอยอยู่บนสายน้ำ
+                        แม่น้ำสะแกกรังเป็นบ้านของชุมชนชาวแพที่สมบูรณ์ที่สุดแหล่งสุดท้ายในประเทศไทย
+                        ต่างจากที่อื่นตรงที่เรือนแพทุกหลังมี "เลขที่บ้าน" ถูกต้องตามกฎหมาย
+                        เป็นพลเมืองของสายน้ำที่ได้รับการคุ้มครองและยอมรับ
+                    </p>
+                    <p class="text-ut-ink/60 leading-relaxed text-base italic">
+                        "The Sakae Krang River is home to the last authentic raft community in Thailand. Recognized and
+                        protected citizens of the water."
+                    </p>
+                    <ul class="space-y-4 pt-4 border-t border-gray-100">
+                        <li class="flex items-center gap-4 text-lg text-ut-green font-bold">
+                            <span
+                                class="w-8 h-8 rounded-full bg-ut-green/10 flex items-center justify-center text-sm">01</span>
+                            การทำประมงปลอดสารเคมี (Zero-Chemical Fishing)
+                        </li>
+                        <li class="flex items-center gap-4 text-lg text-ut-green font-bold">
+                            <span
+                                class="w-8 h-8 rounded-full bg-ut-green/10 flex items-center justify-center text-sm">02</span>
+                            หัตถกรรมผักตบชวา (Water Hyacinth Crafts)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. PLA RAED SUSTAINABILITY MODEL -->
+    <section class="py-24 bg-ut-green text-white relative">
+        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]">
+        </div>
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center relative z-10">
+            <div class="order-2 md:order-1 reveal-on-scroll space-y-6">
+                <div class="inline-block bg-ut-gold/20 text-ut-gold px-4 py-1 rounded-full text-sm font-bold uppercase">
+                    สินค้า GI (GI Certified)</div>
+                <h2 class="font-serif text-5xl text-white">ปลาแรดลุ่มน้ำสะแกกรัง</h2>
+                <h3 class="font-serif text-3xl text-ut-gold italic">The Giant Gourami</h3>
+                <p class="text-white/95 leading-relaxed text-xl font-normal">
+                    ไม่ใช่แค่ปลา แต่คือโมเดลเศรษฐกิจ เลี้ยงในกระชังลูกบวบที่มีน้ำไหลเวียนตลอดเวลาและให้กินพืชตามธรรมชาติ
+                    100% ทำให้ "ปลาแรดอุทัย" มีรสชาติเป็นเอกลักษณ์ เนื้อแน่น หวาน และไม่มีกลิ่นโคลน
+                </p>
+                <p class="text-white/60 leading-relaxed text-base italic">
+                    "Raised in free-flowing water with natural vegetation, acquiring a unique sweet and firm taste."
+                </p>
+                <div class="grid grid-cols-3 gap-4 pt-8 text-center">
+                    <div class="p-4 rounded-lg bg-white/10 backdrop-blur border border-white/10">
+                        <div class="text-2xl font-bold text-ut-gold">2 ปี (Yrs)</div>
+                        <div class="text-[10px] uppercase opacity-80 text-white">ระยะเวลาเลี้ยง</div>
+                    </div>
+                    <div class="p-4 rounded-lg bg-white/10 backdrop-blur border border-white/10">
+                        <div class="text-2xl font-bold text-ut-gold">100%</div>
+                        <div class="text-[10px] uppercase opacity-80 text-white">อาหารธรรมชาติ</div>
+                    </div>
+                    <div class="p-4 rounded-lg bg-white/10 backdrop-blur border border-white/10">
+                        <div class="text-2xl font-bold text-ut-gold">GI</div>
+                        <div class="text-[10px] uppercase opacity-80 text-white">สิ่งบ่งชี้ภูมิศาสตร์</div>
+                    </div>
+                </div>
+            </div>
+            <div class="order-1 md:order-2 reveal-on-scroll">
+                <div class="relative aspect-square rounded-[3rem] overflow-hidden border-4 border-ut-gold/20 shadow-2xl group cursor-pointer"
+                    onclick="openLightbox('Contents/pla-raed.jfif')">
+                    <img src="Contents/pla-raed.jfif"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Pla Raed">
+                    <div
+                        class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-transparent transition">
+                        <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. BREATHING MUSEUM (Combined with Old Town Identity) -->
+    <section id="community" class="py-24 bg-ut-paper relative z-10">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+            <div class="space-y-4 reveal-on-scroll">
+                <div class="h-[500px] rounded-2xl overflow-hidden shadow-lg cursor-pointer"
+                    onclick="openLightbox('Contents/Per05.jpg')">
+                    <img src="Contents/Per05.jpg"
+                        class="w-full h-full object-cover hover:scale-105 transition duration-700"
+                        alt="Old wooden house">
+                </div>
+                <p class="text-sm text-center text-ut-ink/50 uppercase tracking-widest font-bold">เอกลักษณ์เมืองเก่า
+                    (Architectural Heritage)</p>
+            </div>
+
+            <div class="flex flex-col justify-center space-y-8 reveal-on-scroll">
+                <h2 class="font-serif text-5xl text-ut-ink">พิพิธภัณฑ์ที่มีลมหายใจ <br><span
+                        class="italic text-ut-green text-3xl">The Breathing Museum</span></h2>
+                <div class="w-16 h-1 bg-ut-gold"></div>
+                <p class="text-xl text-ut-ink/80 leading-relaxed font-normal">
+                    อุทัยธานีไม่ใช่โรงถ่ายภาพยนตร์ แต่เป็นเมืองที่มีชีวิต
+                    ตึกแถวไม้เก่าแก่อายุนับร้อยปียังคงเปิดทำการค้าขาย เอกลักษณ์ของ "เมืองเก่า" ถูกรักษาไว้อย่างเข้มงวด
+                </p>
+                <p class="text-lg text-ut-ink/60 italic font-serif">
+                    "Uthai Thani is a living, breathing town where centuries-old wooden shophouses strictly preserve
+                    their identity."
+                </p>
+
+                <!-- Human Element Integration -->
+                <div class="bg-white p-6 rounded-xl border border-ut-green/10 mt-6 shadow-sm">
+                    <div class="flex items-center gap-4">
+                        <img src="Contents/Per01.jpg" class="w-12 h-12 rounded-full object-cover border border-ut-gold"
+                            alt="Grandma Daeng">
+                        <div>
+                            <p class="text-ut-ink/80 text-base italic">"ยายขายผักที่นี่มา 50 ปี แม่น้ำให้ชีวิตเรา
+                                เราก็ต้องดูแลแม่น้ำ"</p>
+                            <div class="text-xs text-ut-green font-bold mt-1 uppercase tracking-wider">— ยายแดง (Grandma
+                                Daeng)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-6 mt-4">
+                    <img src="Contents/625985_0.jpg"
+                        class="rounded-xl h-32 w-full object-cover cursor-pointer hover:opacity-80 transition shadow-md"
+                        onclick="openLightbox('Contents/625985_0.jpg')" alt="Temple">
+                    <img src="Contents/626014.jpg"
+                        class="rounded-xl h-32 w-full object-cover cursor-pointer hover:opacity-80 transition shadow-md"
+                        onclick="openLightbox('Contents/626014.jpg')" alt="Culture">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. FUTURE VISION (Reduced) -->
+    <section class="py-24 bg-white relative z-10">
+        <div class="max-w-4xl mx-auto px-6 text-center reveal-on-scroll space-y-8">
+            <h2 class="font-serif text-4xl text-ut-ink">สู่อนาคตที่ยั่งยืน <br><span
+                    class="italic text-ut-green text-2xl">Towards a Sustainable Future</span></h2>
+            <p class="text-lg text-ut-ink/70 leading-relaxed font-normal">
+                เรามีเป้าหมายร่วมกันในการรักษาความสมบูรณ์ของระบบนิเวศ
+                เพื่อส่งต่อมรดกอันล้ำค่านี้ให้ลูกหลานชาวอุทัยธานีสืบไป
+            </p>
+            <div class="mt-8 relative h-64 rounded-2xl overflow-hidden group cursor-pointer shadow-xl"
+                onclick="openLightbox('Contents/S__31825925_0.jpg')">
+                <img src="Contents/S__31825925_0.jpg"
+                    class="w-full h-full object-cover brightness-75 group-hover:brightness-100 transition duration-700"
+                    alt="Future">
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <p class="font-serif text-3xl text-white drop-shadow-md tracking-wider">สานต่อเจตนารมณ์</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. FOOTER / CALL TO ACTION -->
+    <footer id="visit" class="bg-ut-green text-white pt-24 pb-12">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 mb-16">
+            <div class="space-y-8">
+                <h2 class="font-serif text-5xl">สัมผัสวิถีไทยที่แท้จริง<br><span
+                        class="text-3xl italic opacity-60">Experience the Real Thailand.</span></h2>
+                <p class="text-ut-clay font-light text-lg max-w-md">
+                    มาเป็นแขก กลับไปอย่างคนในครอบครัว ค้นพบวิถีชีวิตสโลว์ไลฟ์ที่เมืองเก่าอุทัยธานี
+                </p>
+                <div class="flex gap-4">
+                    <button
+                        class="bg-ut-gold text-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-ut-green transition">
+                        ดาวน์โหลดแผนที่ (Map)
+                    </button>
+                    <button
+                        class="border border-white/30 px-8 py-3 rounded-full font-bold hover:bg-white hover:text-ut-green transition">
+                        ติดต่อเทศบาล (Contact)
+                    </button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-8 text-sm text-ut-clay">
+                <div>
+                    <h4 class="font-bold text-white uppercase tracking-widest mb-6">ติดต่อ (Contact)</h4>
+                    <ul class="space-y-4">
+                        <li>147 ถ.ศรีอุทัย</li>
+                        <li>อ.เมือง จ.อุทัยธานี 61000</li>
+                        <li>โทร: +66 56 511 060</li>
+                        <li>อีเมล: saraban@uthaicity.go.th</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white uppercase tracking-widest mb-6">บริการออนไลน์ (E-Services)</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="hover:text-white transition">ระบบรับเรื่องร้องเรียน</a></li>
+                        <li><a href="#" class="hover:text-white transition">ชำระภาษีออนไลน์</a></li>
+                        <li><a href="#" class="hover:text-white transition">จองคิวออนไลน์</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-white/10 pt-8 text-center text-xs text-white/40 uppercase tracking-widest">
+            &copy; 2025 Uthai Thani Municipality. Designed for Top 100 Green Destinations.
+        </div>
+    </footer>
+
+    <!-- LIGHTBOX & SCRIPTS -->
+    <div id="lightbox" class="fixed inset-0 z-[100] bg-black/95 hidden flex items-center justify-center p-4"
+        onclick="closeLightbox()">
+        <button class="absolute top-4 right-4 text-white hover:text-ut-gold transition" onclick="closeLightbox()">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+        <div class="relative max-h-[90vh] max-w-[90vw]" onclick="event.stopPropagation()">
+            <img id="lightbox-img" src="" class="hidden max-h-[85vh] max-w-[90vw] object-contain shadow-2xl rounded-lg">
+            <video id="lightbox-video" controls class="hidden max-h-[85vh] max-w-[90vw] shadow-2xl rounded-lg bg-black">
+                <source src="" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <script>
+        // Lightbox
+        function openLightbox(src) {
+            const lb = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            const vid = document.getElementById('lightbox-video');
+
+            lb.classList.remove('hidden');
+
+            if (src.endsWith('.mp4')) {
+                img.classList.add('hidden');
+                vid.classList.remove('hidden');
+                vid.src = src;
+                vid.play();
+            } else {
+                vid.classList.add('hidden');
+                vid.pause();
+                img.classList.remove('hidden');
+                img.src = src;
+            }
+        }
+
+        function closeLightbox() {
+            const lb = document.getElementById('lightbox');
+            const vid = document.getElementById('lightbox-video');
+
+            lb.classList.add('hidden');
+            vid.pause();
+            vid.src = "";
+        }
+
+        // Scroll Reveal Observer
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal-on-scroll').forEach((el) => observer.observe(el));
+
+        // Smooth Scroll specific
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
