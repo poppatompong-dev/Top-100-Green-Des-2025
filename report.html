@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainability Report | Uthai Thani Old Town</title>
+    <!-- Tailwind for Utility Classes (Minimal use) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: { extend: { colors: { 'river-blue': '#1E3A5F', 'earth-green': '#2F5D50', 'soft-sand': '#F4F1EC', 'charcoal': '#2A2A2A', 'muted-gold': '#BFA36A' } } }
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Sarabun:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-wrapper">
+            <div class="logo">
+                Uthai Thani Old Town
+                <span>Sustainability Report</span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="governance.html">Governance</a></li>
+                    <li><a href="climate.html">Climate</a></li>
+                    <li><a href="report.html" class="active" style="color:var(--muted-gold)">Report</a></li>
+                    <li><button id="lang-toggle" class="lang-btn">EN</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header fade-in">
+        <img src="Contents/2025.jpg" alt="Sustainability Report Background">
+        <div class="page-header-content">
+            <h1>
+                <span data-lang="th">รายงานความยั่งยืนประจำปี 2025</span>
+                <span data-lang="en" style="display:none;">Annual Sustainability Report 2025</span>
+            </h1>
+            <p style="font-size: 20px; font-weight: 300;">
+                <span data-lang="th">ผลการดำเนินงานตามเกณฑ์มาตรฐาน Top 100 Green Destinations</span>
+                <span data-lang="en" style="display:none;">Performance Results based on Green Destinations
+                    Standard</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="section section-light fade-in">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 60px;">
+                <span data-lang="th">ดาวน์โหลดเอกสาร (ฉบับสมบูรณ์)</span>
+                <span data-lang="en" style="display:none;">Download Full Documents</span>
+            </h2>
+            <div class="grid-2">
+                <div class="card" style="padding: 40px; text-align: center;">
+                    <div
+                        style="width: 80px; height: 100px; background: var(--soft-sand); margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(0,0,0,0.1);">
+                        <svg style="width: 40px; height: 40px; color: var(--river-blue);" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 style="font-size: 20px; font-weight: 700; margin-bottom: 15px; color: var(--river-blue);">
+                        <span data-lang="th">รายงานฉบับสมบูรณ์ (TH)</span>
+                        <span data-lang="en" style="display:none;">Full Report (Thai)</span>
+                    </h3>
+                    <p style="font-size: 14px; color: var(--soft-gray); margin-bottom: 25px;">PDF, 15 MB</p>
+                    <a href="#" class="btn-primary" style="width: 100%; text-align: center;">Download</a>
+                </div>
+                <div class="card" style="padding: 40px; text-align: center;">
+                    <div
+                        style="width: 80px; height: 100px; background: var(--soft-sand); margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(0,0,0,0.1);">
+                        <svg style="width: 40px; height: 40px; color: var(--river-blue);" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 style="font-size: 20px; font-weight: 700; margin-bottom: 15px; color: var(--river-blue);">
+                        <span data-lang="th">Executive Summary (EN)</span>
+                        <span data-lang="en" style="display:none;">Executive Summary (EN)</span>
+                    </h3>
+                    <p style="font-size: 14px; color: var(--soft-gray); margin-bottom: 25px;">PDF, 5 MB</p>
+                    <a href="#" class="btn-primary" style="width: 100%; text-align: center;">Download</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Metrics / Infographic Style -->
+    <section class="section section-dark fade-in">
+        <div class="container">
+            <h2 style="color: white; text-align: center; margin-bottom: 60px;">
+                <span data-lang="th">ตัวชี้วัดความสำเร็จ 2025</span>
+                <span data-lang="en" style="display:none;">Key Performance Indicators 2025</span>
+            </h2>
+            <div class="grid-3">
+                <div
+                    style="text-align: center; padding: 40px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);">
+                    <div style="font-size: 48px; font-weight: 700; color: var(--muted-gold); margin-bottom: 15px;">100%
+                    </div>
+                    <p style="color: rgba(255,255,255,0.8); font-size: 16px;">
+                        <span data-lang="th">การจัดการน้ำเสียชุมชนเรือนแพ</span>
+                        <span data-lang="en" style="display:none;">Wastewater Treatment in Raft Community</span>
+                    </p>
+                </div>
+                <div
+                    style="text-align: center; padding: 40px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);">
+                    <div style="font-size: 48px; font-weight: 700; color: var(--muted-gold); margin-bottom: 15px;">Zero
+                    </div>
+                    <p style="color: rgba(255,255,255,0.8); font-size: 16px;">
+                        <span data-lang="th">การรุกล้ำพื้นที่ชุ่มน้ำใหม่</span>
+                        <span data-lang="en" style="display:none;">New Encroachment on Wetlands</span>
+                    </p>
+                </div>
+                <div
+                    style="text-align: center; padding: 40px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);">
+                    <div style="font-size: 48px; font-weight: 700; color: var(--muted-gold); margin-bottom: 15px;">4.8/5
+                    </div>
+                    <p style="color: rgba(255,255,255,0.8); font-size: 16px;">
+                        <span data-lang="th">ความพึงพอใจของนักท่องเที่ยว</span>
+                        <span data-lang="en" style="display:none;">Tourist Satisfaction Score</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Evidence Gallery -->
+    <section class="section section-light fade-in">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 60px;">
+                <span data-lang="th">ประมวลภาพกิจกรรมลงพื้นที่</span>
+                <span data-lang="en" style="display:none;">On-Site Evidence & Activities</span>
+            </h2>
+            <div class="grid-2">
+                <div>
+                    <img src="Contents/S__31825925_0.jpg" alt="Local Market Interaction" class="shadow-sm">
+                    <p style="font-size: 14px; margin-top: 10px; color: var(--soft-gray);">
+                        <span data-lang="th">การส่งเสริมตลาดชุมชนและผลิตภัณฑ์ท้องถิ่น</span>
+                        <span data-lang="en" style="display:none;">Promoting local markets and community
+                            products.</span>
+                    </p>
+                </div>
+                <div>
+                    <img src="Contents/Per013.jpg" alt="Stakeholder Meeting" class="shadow-sm">
+                    <p style="font-size: 14px; margin-top: 10px; color: var(--soft-gray);">
+                        <span data-lang="th">การประชุมหารือร่วมกับผู้ประกอบการในพื้นที่</span>
+                        <span data-lang="en" style="display:none;">Consultation with local entrepreneurs.</span>
+                    </p>
+                </div>
+                <div>
+                    <img src="Contents/Per05.jpg" alt="Youth Engagement" class="shadow-sm">
+                    <p style="font-size: 14px; margin-top: 10px; color: var(--soft-gray);">
+                        <span data-lang="th">กิจกรรมเยาวชนรักษ์สายน้ำ</span>
+                        <span data-lang="en" style="display:none;">Youth River Conservation activities.</span>
+                    </p>
+                </div>
+                <div>
+                    <img src="Contents/626014.jpg" alt="Infrastructure Inspection" class="shadow-sm">
+                    <p style="font-size: 14px; margin-top: 10px; color: var(--soft-gray);">
+                        <span data-lang="th">การตรวจสอบโครงสร้างพื้นฐานเพื่อรองรับการท่องเที่ยว</span>
+                        <span data-lang="en" style="display:none;">Infrastructure inspection for tourism
+                            readiness.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="grid-2">
+                <div>
+                    <h4 style="font-size: 20px; font-weight: 600; margin-bottom: 20px;">Uthai Thani Old Town</h4>
+                    <p style="font-size: 14px; line-height: 1.8;">
+                        <span data-lang="th">สำนักงานเทศบาลเมืองอุทัยธานี<br>123 ถ.ศรีอุทัย อ.เมือง จ.อุทัยธานี
+                            61000</span>
+                        <span data-lang="en" style="display:none;">Municipality Office<br>123 Sri Uthai Road, Uthai
+                            Thani, 61000, Thailand</span>
+                        <br>
+                        Tel: +66 56 511 060 | Email: sustainability@uthaicity.go.th
+                    </p>
+                </div>
+                <div style="text-align: right;">
+                    <h4
+                        style="font-size: 14px; text-transform: uppercase; color: var(--muted-gold); margin-bottom: 15px; letter-spacing: 1px;">
+                        Sitemap</h4>
+                    <ul style="list-style: none; line-height: 2; color: rgba(255,255,255,0.7);">
+                        <li><a href="governance.html">Governance</a></li>
+                        <li><a href="climate.html">Climate Action</a></li>
+                        <li><a href="report.html">Sustainability Report</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 60px; padding-top: 30px; text-align: center; font-size: 12px; color: rgba(255,255,255,0.4);">
+                &copy; 2025 Uthai Thani City Municipality. All rights reserved. | Green Destinations Standard Compliance
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

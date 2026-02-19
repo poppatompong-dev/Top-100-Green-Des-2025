@@ -1,0 +1,463 @@
+/* =====================================
+   UTHAI THANI – PREMIUM ECO SYSTEM
+   Production Version
+===================================== */
+
+/* ---------- GLOBAL & FONTS ---------- */
+@font-face {
+    font-family: 'Srisakdi';
+    src: url('../../Srisakdi/Srisakdi-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Srisakdi';
+    src: url('../../Srisakdi/Srisakdi-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+:root {
+
+    /* Core Brand */
+    --river-blue: #1E3A5F;
+    --forest-deep: #1F3D36;
+    --earth-green: #2F5D50;
+
+    /* Premium Accent */
+    --muted-gold: #BFA36A;
+    --warm-clay: #B47C4F;
+
+    /* Neutrals */
+    --ivory: #F7F5F0;
+    --charcoal: #2A2A2A;
+    --soft-gray: #6F6F6F;
+    --white: #FFFFFF;
+
+    --max-width: 1180px;
+    --text-width: 680px;
+
+    --font-heading: 'Srisakdi', 'Sarabun', serif;
+    --font-body: 'Inter', 'Sarabun', sans-serif;
+}
+
+/* ---------- RESET ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    background: var(--ivory);
+    color: var(--charcoal);
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- CONTAINER ---------- */
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+/* ---------- SECTION ---------- */
+
+.section {
+    padding: 140px 0;
+    position: relative;
+}
+
+.section-light {
+    background: var(--ivory);
+}
+
+.section-dark {
+    background: var(--forest-deep);
+    color: var(--white);
+}
+
+/* ---------- TYPOGRAPHY ---------- */
+
+h1 {
+    font-family: var(--font-heading);
+    font-size: 52px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+h2 {
+    font-family: var(--font-heading);
+    font-size: 34px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+p {
+    max-width: var(--text-width);
+    font-size: 17px;
+    margin-bottom: 22px;
+    color: inherit;
+    /* Inherit color to work in dark sections */
+}
+
+/* Adjust paragraph color for light sections explicitly if needed, but inherit usually works */
+.section-light p {
+    color: var(--soft-gray);
+}
+
+.section-dark p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+.subtitle {
+    color: var(--earth-green);
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+/* ---------- GOLD DIVIDER ---------- */
+
+.divider {
+    width: 60px;
+    height: 2px;
+    background: var(--muted-gold);
+    margin: 30px 0;
+}
+
+/* ---------- NAVBAR ---------- */
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 24px 0;
+    top: 0;
+    left: 0;
+    transition: 0.4s ease;
+    z-index: 999;
+}
+
+.navbar.scrolled {
+    background: var(--ivory);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--river-blue);
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.logo span {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--earth-green);
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--river-blue);
+    transition: 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: var(--muted-gold);
+}
+
+/* Navbar links on dark hero backgrounds need to be white initially, UNLESS scrolled */
+.navbar:not(.scrolled) .nav-links a {
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.navbar:not(.scrolled) .logo {
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.navbar:not(.scrolled) .logo span {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: var(--white);
+    overflow: hidden;
+}
+
+.hero video,
+.hero img.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(31, 61, 54, 0.4);
+    /* Forest Deep transparent */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero h1 {
+    margin-bottom: 20px;
+    font-size: 64px;
+}
+
+.hero p {
+    color: #f0f0f0;
+    font-size: 20px;
+    margin: 0 auto 40px;
+}
+
+/* ---------- BUTTON ---------- */
+
+.btn-primary {
+    display: inline-block;
+    padding: 14px 30px;
+    border: 1px solid var(--muted-gold);
+    background: transparent;
+    color: var(--muted-gold);
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.4s ease;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background: var(--muted-gold);
+    color: var(--white);
+}
+
+.btn-secondary {
+    display: inline-block;
+    padding: 12px 30px;
+    border: 1px solid var(--white);
+    color: var(--white);
+    border-radius: 0;
+    /* Premium feel often uses sharp or slightly rounded, user says 4px earlier but new CSS implies sharp/default? keeping it consistent with btn-primary */
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+    background: var(--white);
+    color: var(--river-blue);
+}
+
+
+/* ---------- GRID ---------- */
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+}
+
+@media (max-width: 900px) {
+
+    .grid-2,
+    .grid-3 {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    .section {
+        padding: 80px 0;
+    }
+}
+
+/* ---------- IMAGE STYLE ---------- */
+
+img {
+    width: 100%;
+    border-radius: 4px;
+    transition: transform 0.6s ease;
+}
+
+/* Hover effect only on images inside cards or specific containers to avoid messing up full width banners if any */
+.card img:hover,
+.grid-2 img:hover {
+    transform: scale(1.03);
+}
+
+/* ---------- CARD ---------- */
+
+.card {
+    padding: 50px;
+    background: var(--white);
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    transition: 0.4s ease;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+/* ---------- FADE IN ---------- */
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: all 0.8s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    background: var(--forest-deep);
+    color: var(--white);
+    padding: 100px 0;
+}
+
+footer p {
+    color: #cfcfcf;
+    max-width: 600px;
+}
+
+footer a {
+    color: #cfcfcf;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: var(--muted-gold);
+}
+
+
+/* ---------- Language Button ---------- */
+.lang-btn {
+    background: none;
+    border: 1px solid var(--muted-gold);
+    color: var(--muted-gold);
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s ease;
+    font-weight: 500;
+}
+
+.lang-btn:hover {
+    background: var(--muted-gold);
+    color: white;
+}
+
+/* Page Header for inner pages */
+.page-header {
+    height: 60vh;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+    background-color: var(--charcoal);
+    overflow: hidden;
+    text-align: center;
+}
+
+.page-header img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+}
+
+.page-header-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 20px;
+}

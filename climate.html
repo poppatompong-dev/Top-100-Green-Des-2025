@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Action | Uthai Thani Old Town</title>
+    <!-- Tailwind for Utility Classes (Minimal use) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: { extend: { colors: { 'river-blue': '#1E3A5F', 'earth-green': '#2F5D50', 'soft-sand': '#F4F1EC', 'charcoal': '#2A2A2A', 'muted-gold': '#BFA36A' } } }
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Sarabun:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-wrapper">
+            <div class="logo">
+                Uthai Thani Old Town
+                <span>Climate Action</span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="governance.html">Governance</a></li>
+                    <li><a href="climate.html" class="active" style="color:var(--muted-gold)">Climate</a></li>
+                    <li><a href="report.html">Report</a></li>
+                    <li><button id="lang-toggle" class="lang-btn">EN</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header fade-in">
+        <img src="Contents/D4.jpg" alt="River Background" style="object-position: center bottom;">
+        <div class="page-header-content">
+            <h1>
+                <span data-lang="th">การรับมือการเปลี่ยนแปลงสภาพภูมิอากาศ</span>
+                <span data-lang="en" style="display:none;">Climate Action & Risk</span>
+            </h1>
+            <p style="font-size: 20px; font-weight: 300;">
+                <span data-lang="th">ยุทธศาสตร์การปรับตัวและความยืดหยุ่นของเมือง</span>
+                <span data-lang="en" style="display:none;">Adaptation Strategies for a Resilient Future</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- Risk Assessment -->
+    <section class="section section-light fade-in">
+        <div class="container" style="text-align: center;">
+            <div style="max-width: 720px; margin: 0 auto 60px;">
+                <h2>
+                    <span data-lang="th">การประเมินความเสี่ยง</span>
+                    <span data-lang="en" style="display:none;">Climate Risk Assessment</span>
+                </h2>
+                <div class="divider" style="margin: 30px auto;"></div>
+                <p style="margin: 0 auto;">
+                    <span data-lang="th">อุทัยธานีเผชิญความเสี่ยงจากอุทกภัย (High Flood Risk)
+                        เนื่องจากเป็นพื้นที่ลุ่มน้ำ ยุทธศาสตร์หลักจึงเน้นการ "อยู่ร่วมกับน้ำ" (Living with Water)
+                        แทนการต่อต้านโครงสร้างทางธรรมชาติ</span>
+                    <span data-lang="en" style="display:none;">Uthai Thani faces high flood risks as a river basin area.
+                        Our core strategy focuses on "Living with Water" rather than resisting natural
+                        structures.</span>
+                </p>
+            </div>
+            <div class="grid-2">
+                <div style="background: var(--ivory); padding: 50px; border: 1px solid rgba(0,0,0,0.05);">
+                    <svg style="width: 48px; height: 48px; color: var(--earth-green); margin: 0 auto 20px;" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z">
+                        </path>
+                    </svg>
+                    <h3 style="font-size: 24px; font-weight: 700; margin-bottom: 10px;">
+                        <span data-lang="th">การปรับตัวต่ออุทกภัย</span>
+                        <span data-lang="en" style="display:none;">Flood Adaptation</span>
+                    </h3>
+                    <p style="font-size: 15px; margin: 0 auto;">
+                        <span data-lang="th">รักษาภูมิปัญญาเรือนแพลูกบวบที่ปรับระดับตามน้ำได้ 100%
+                            เชื่อมโยงวิถีชีวิตกับน้ำ</span>
+                        <span data-lang="en" style="display:none;">Preserving 100% of traditional floating raft houses
+                            that adapt to water levels, connecting lifestyle with the river.</span>
+                    </p>
+                </div>
+                <div style="background: var(--ivory); padding: 50px; border: 1px solid rgba(0,0,0,0.05);">
+                    <svg style="width: 48px; height: 48px; color: var(--earth-green); margin: 0 auto 20px;" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                        </path>
+                    </svg>
+                    <h3 style="font-size: 24px; font-weight: 700; margin-bottom: 10px;">
+                        <span data-lang="th">ลดคาร์บอนฟุตพริ้นท์</span>
+                        <span data-lang="en" style="display:none;">Carbon Reduction</span>
+                    </h3>
+                    <p style="font-size: 15px; margin: 0 auto;">
+                        <span data-lang="th">ส่งเสริมการท่องเที่ยวด้วยจักรยานและเดินเท้า (Slow Tourism)
+                            ทั่วเขตเมืองเก่า</span>
+                        <span data-lang="en" style="display:none;">Promoting cycling and walking (Slow Tourism)
+                            throughout the Old Town district.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Field Operations Gallery -->
+    <section class="section section-light fade-in" style="background-color: white;">
+        <div class="container">
+            <h2
+                style="border-left: 4px solid var(--muted-gold); padding-left: 20px; font-size: 28px; margin-bottom: 50px;">
+                <span data-lang="th">การดำเนินงานในพื้นที่จริง</span>
+                <span data-lang="en" style="display:none;">Field Operations</span>
+            </h2>
+            <div class="grid-2">
+                <div>
+                    <img src="Contents/626005.jpg" alt="Water Management"
+                        style="height: 300px; object-fit: cover; margin-bottom: 20px;">
+                    <h4 style="font-weight: 700; color: var(--earth-green); font-size: 20px; margin-bottom: 10px;">
+                        <span data-lang="th">การบริหารจัดการน้ำ</span>
+                        <span data-lang="en" style="display:none;">Water Management</span>
+                    </h4>
+                    <p style="font-size: 15px; color: var(--soft-gray);">
+                        <span
+                            data-lang="th">การติดตามระดับน้ำและการไหลเวียนของแม่น้ำสะแกกรังอย่างใกล้ชิดเพื่อเตรียมพร้อมรับมือภัยธรรมชาติ</span>
+                        <span data-lang="en" style="display:none;">Close monitoring of water levels and flow in the
+                            Sakae Krang River to prepare for natural disasters.</span>
+                    </p>
+                </div>
+                <div>
+                    <img src="Contents/625985_0.jpg" alt="Green Community"
+                        style="height: 300px; object-fit: cover; margin-bottom: 20px;">
+                    <h4 style="font-weight: 700; color: var(--earth-green); font-size: 20px; margin-bottom: 10px;">
+                        <span data-lang="th">ชุมชนสีเขียว</span>
+                        <span data-lang="en" style="display:none;">Green Community</span>
+                    </h4>
+                    <p style="font-size: 15px; color: var(--soft-gray);">
+                        <span
+                            data-lang="th">กิจกรรมส่งเสริมพื้นที่สีเขียวและการท่องเที่ยวที่เป็นมิตรกับสิ่งแวดล้อมในชุมชนเมืองเก่า</span>
+                        <span data-lang="en" style="display:none;">Activities promoting green spaces and eco-friendly
+                            tourism within the Old Town community.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Waste Data -->
+    <section class="section section-dark fade-in" style="text-align: center;">
+        <div class="container">
+            <h2 style="color: white; margin-bottom: 60px;">
+                <span data-lang="th">เป้าหมายการจัดการขยะ</span>
+                <span data-lang="en" style="display:none;">Waste Management Targets</span>
+            </h2>
+            <div class="grid-3">
+                <div>
+                    <div
+                        style="font-size: 64px; font-weight: 700; color: var(--muted-gold); line-height: 1; margin-bottom: 15px;">
+                        30%</div>
+                    <div style="font-size: 13px; text-transform: uppercase; letter-spacing: 2px; opacity: 0.8;">
+                        <span data-lang="th">ลดขยะพลาสติกใช้ครั้งเดียวทิ้ง</span>
+                        <span data-lang="en" style="display:none;">Reduction of Single-Use Plastic</span>
+                    </div>
+                </div>
+                <div>
+                    <div
+                        style="font-size: 64px; font-weight: 700; color: var(--muted-gold); line-height: 1; margin-bottom: 15px;">
+                        80%</div>
+                    <div style="font-size: 13px; text-transform: uppercase; letter-spacing: 2px; opacity: 0.8;">
+                        <span data-lang="th">การแปรรูปขยะอินทรีย์</span>
+                        <span data-lang="en" style="display:none;">Organic Waste Processing</span>
+                    </div>
+                </div>
+                <div>
+                    <div
+                        style="font-size: 64px; font-weight: 700; color: var(--muted-gold); line-height: 1; margin-bottom: 15px;">
+                        2027</div>
+                    <div style="font-size: 13px; text-transform: uppercase; letter-spacing: 2px; opacity: 0.8;">
+                        <span data-lang="th">เป้าหมาย Zero Waste Certification</span>
+                        <span data-lang="en" style="display:none;">Zero Waste Certification Goal</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="grid-2">
+                <div>
+                    <h4 style="font-size: 20px; font-weight: 600; margin-bottom: 20px;">Uthai Thani Old Town</h4>
+                    <p style="font-size: 14px; line-height: 1.8;">
+                        <span data-lang="th">สำนักงานเทศบาลเมืองอุทัยธานี<br>123 ถ.ศรีอุทัย อ.เมือง จ.อุทัยธานี
+                            61000</span>
+                        <span data-lang="en" style="display:none;">Municipality Office<br>123 Sri Uthai Road, Uthai
+                            Thani, 61000, Thailand</span>
+                        <br>
+                        Tel: +66 56 511 060 | Email: sustainability@uthaicity.go.th
+                    </p>
+                </div>
+                <div style="text-align: right;">
+                    <h4
+                        style="font-size: 14px; text-transform: uppercase; color: var(--muted-gold); margin-bottom: 15px; letter-spacing: 1px;">
+                        Sitemap</h4>
+                    <ul style="list-style: none; line-height: 2; color: rgba(255,255,255,0.7);">
+                        <li><a href="governance.html">Governance</a></li>
+                        <li><a href="climate.html">Climate Action</a></li>
+                        <li><a href="report.html">Sustainability Report</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 60px; padding-top: 30px; text-align: center; font-size: 12px; color: rgba(255,255,255,0.4);">
+                &copy; 2025 Uthai Thani City Municipality. All rights reserved. | Green Destinations Standard Compliance
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
