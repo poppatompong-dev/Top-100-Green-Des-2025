@@ -431,6 +431,73 @@ footer a:hover {
     color: white;
 }
 
+/* ---------- VIDEO MODAL ---------- */
+.video-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    opacity: 0;
+    transition: 0.4s ease;
+}
+
+.video-modal.active {
+    display: flex;
+    opacity: 1;
+}
+
+.video-modal-content {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    background: #000;
+    aspect-ratio: 16/9;
+}
+
+.video-modal video {
+    width: 100%;
+    height: 100%;
+}
+
+.modal-close {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-family: var(--font-body);
+}
+
+/* ---------- NEXT PAGE CTA ---------- */
+.next-page-cta {
+    background: var(--river-blue);
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.next-page-cta .subtitle {
+    color: var(--muted-gold);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.next-page-cta h2 {
+    color: white;
+    margin-bottom: 40px;
+    font-size: 42px;
+}
+
 /* Page Header for inner pages */
 .page-header {
     height: 60vh;
@@ -460,4 +527,102 @@ footer a:hover {
     z-index: 2;
     max-width: 800px;
     padding: 0 20px;
+}
+
+/* ---------- IMAGE MODAL (Lightbox) ---------- */
+.image-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 10000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.3s ease;
+    cursor: zoom-out;
+}
+
+.image-modal.active {
+    display: flex;
+    opacity: 1;
+}
+
+.image-modal img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    transform: scale(0.95);
+    transition: 0.3s ease;
+}
+
+.image-modal.active img {
+    transform: scale(1);
+}
+
+/* ---------- BREADCRUMBS ---------- */
+.breadcrumbs {
+    position: absolute;
+    top: 100px;
+    /* Below navbar */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    padding: 10px 0;
+}
+
+.breadcrumbs ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.breadcrumbs a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.breadcrumbs span {
+    color: var(--muted-gold);
+}
+
+/* ---------- SCROLL TO TOP ---------- */
+.scroll-top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: var(--muted-gold);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: 0.3s ease;
+    z-index: 998;
+}
+
+.scroll-top-btn.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-top-btn:hover {
+    background: var(--river-blue);
+    transform: translateY(-4px);
 }

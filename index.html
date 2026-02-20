@@ -65,11 +65,19 @@
                 <span data-lang="th">Uthai Thani Old Town: Top 100 Green Destinations 2025</span>
                 <span data-lang="en" style="display:none;">Uthai Thani Old Town: Top 100 Green Destinations 2025</span>
             </p>
-            <div style="display:flex; gap: 20px; justify-content: center;">
+            <div style="display:flex; gap: 20px; justify-content: center; align-items: center; flex-wrap: wrap;">
                 <a href="governance.html" class="btn-primary">
                     <span data-lang="th">โครงสร้างธรรมาภิบาล</span>
                     <span data-lang="en" style="display:none;">Explore Governance</span>
                 </a>
+                <button id="watch-video-btn" class="btn-secondary"
+                    style="display: flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.1); backdrop-filter: blur(5px);">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8 5v14l11-7z" />
+                    </svg>
+                    <span data-lang="th">ชมวิดีโอเรื่องราว</span>
+                    <span data-lang="en" style="display:none;">Watch Story</span>
+                </button>
                 <a href="report.html" class="btn-secondary">
                     <span data-lang="th">ดาวน์โหลดรายงาน</span>
                     <span data-lang="en" style="display:none;">Full Report</span>
@@ -84,6 +92,16 @@
             </div>
         </div>
     </section>
+
+    <!-- Video Modal -->
+    <div id="video-modal" class="video-modal">
+        <div class="video-modal-content">
+            <button id="modal-close" class="modal-close">&times;</button>
+            <video id="modal-video" controls>
+                <source src="Contents/gi-tourism-pla-raed.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
 
     <!-- 2. Executive Summary -->
     <section class="section section-light fade-in">
@@ -216,6 +234,21 @@
         </div>
     </section>
 
+    <!-- Next Chapter CTA -->
+    <section class="next-page-cta fade-in">
+        <div class="container">
+            <span class="subtitle">CONTINUE THE JOURNEY</span>
+            <h2>
+                <span data-lang="th">สำรวจโครงสร้างการบริหารจัดการ</span>
+                <span data-lang="en" style="display:none;">Explore Governance Framework</span>
+            </h2>
+            <a href="governance.html" class="btn-primary" style="border-color: white; color: white;">
+                <span data-lang="th">ถัดไป: ธรรมาภิบาล</span>
+                <span data-lang="en" style="display:none;">Next: Governance</span>
+            </a>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -223,9 +256,27 @@
                 <div>
                     <h4 style="font-size: 20px; font-weight: 600; margin-bottom: 20px;">Uthai Thani Old Town</h4>
                     <p style="font-size: 14px; line-height: 1.8;">
-                        Municipality Office<br>
-                        123 Sri Uthai Road, Uthai Thani, 61000, Thailand<br>
-                        Tel: +66 56 511 060 | Email: sustainability@uthaicity.go.th
+                        <span data-lang="th">
+                            <strong>เทศบาลเมืองอุทัยธานี</strong><br>
+                            เลขที่ 147 ตำบลอุทัยใหม่ อำเภอเมือง จังหวัดอุทัยธานี 61000<br>
+                            โทรศัพท์: 056-511-061 | โทรสาร: 056-511-061<br>
+                            Email: saraban@uthaicity.go.th<br>
+                            Website: <a href="http://www.uthaicity.go.th" target="_blank"
+                                style="color: inherit; text-decoration: underline;">www.uthaicity.go.th</a><br>
+                            Facebook: <a href="https://www.facebook.com/PR.Uthaicity" target="_blank"
+                                style="color: inherit; text-decoration: underline;">ประชาสัมพันธ์
+                                เทศบาลเมืองอุทัยธานี</a>
+                        </span>
+                        <span data-lang="en" style="display:none;">
+                            <strong>Uthai Thani City Municipality</strong><br>
+                            147 Uthai Mai Subdistrict, Mueang District, Uthai Thani 61000<br>
+                            Tel: 056-511-061 | Fax: 056-511-061<br>
+                            Email: saraban@uthaicity.go.th<br>
+                            Website: <a href="http://www.uthaicity.go.th" target="_blank"
+                                style="color: inherit; text-decoration: underline;">www.uthaicity.go.th</a><br>
+                            Facebook: <a href="https://www.facebook.com/PR.Uthaicity" target="_blank"
+                                style="color: inherit; text-decoration: underline;">PR Uthai Thani City Municipality</a>
+                        </span>
                     </p>
                 </div>
                 <div style="text-align: right;">
