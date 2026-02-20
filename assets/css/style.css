@@ -264,6 +264,8 @@ p {
     position: relative;
     color: var(--white);
     overflow: hidden;
+    z-index: 1;
+    /* Ensure video sits above background watermark */
 }
 
 .hero video,
