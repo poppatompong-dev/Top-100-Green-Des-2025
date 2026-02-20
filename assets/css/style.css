@@ -56,7 +56,7 @@ html {
 
 body {
     font-family: var(--font-body);
-    background: var(--ivory);
+    /* background: var(--ivory); MOVED TO WATERMARK */
     color: var(--charcoal);
     line-height: 1.75;
     -webkit-font-smoothing: antialiased;
@@ -78,13 +78,19 @@ body {
 }
 
 .section-light {
-    background: var(--ivory);
+    background: transparent;
+    /* Changed from var(--ivory) to reveal watermark */
 }
 
+
 .section-dark {
-    background: var(--forest-deep);
+    background: rgba(31, 61, 54, 0.95);
+    /* Forest Deep with transparency */
     color: var(--white);
+    backdrop-filter: blur(5px);
 }
+
+
 
 /* ---------- TYPOGRAPHY ---------- */
 
@@ -393,7 +399,10 @@ img {
 
 .card {
     padding: 50px;
-    background: var(--white);
+    background: rgba(255, 255, 255, 0.85);
+    /* Semi-transparent for watermark visibility */
+    backdrop-filter: blur(5px);
+    /* Enhanced glass effect */
     border-radius: 6px;
     border: 1px solid rgba(0, 0, 0, 0.04);
     transition: 0.4s ease;
@@ -421,9 +430,11 @@ img {
 /* ---------- FOOTER ---------- */
 
 footer {
-    background: var(--forest-deep);
+    background: rgba(31, 61, 54, 0.98);
+    /* Forest Deep with slight transparency */
     color: var(--white);
     padding: 100px 0;
+    backdrop-filter: blur(5px);
 }
 
 footer p {
@@ -506,11 +517,13 @@ footer a:hover {
 
 /* ---------- NEXT PAGE CTA ---------- */
 .next-page-cta {
-    background: var(--river-blue);
+    background: rgba(30, 58, 95, 0.95);
+    /* River Blue with transparency */
     padding: 100px 0;
     text-align: center;
     color: white;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
 }
 
 .next-page-cta .subtitle {
@@ -677,6 +690,37 @@ footer a:hover {
     .hero-content {
         padding: 0 20px;
     }
+}
+
+/* ---------- THAI WATERMARK (Global Pattern) ---------- */
+/* ---------- THAI WATERMARK (Global Pattern) ---------- */
+.thai-watermark {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* Behind everything */
+    pointer-events: none;
+    background-color: var(--ivory);
+    /* Base background color here */
+    opacity: 1;
+    /* Full opacity container, pattern handled by blend/opacity below if needed, but here we just show the bg */
+}
+
+.thai-watermark::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('../../Contents/hqdefault.jpg');
+    background-size: 300px;
+    background-repeat: repeat;
+    background-position: center;
+    opacity: 0.1;
+    /* PATTERN OPACITY ONLY */
+    mix-blend-mode: multiply;
+    filter: grayscale(100%) sepia(50%) contrast(120%);
 }
 
 /* ---------- RESPONSIVE (MOBILE) ---------- */
