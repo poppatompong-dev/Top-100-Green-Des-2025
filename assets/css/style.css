@@ -178,10 +178,34 @@ p {
     line-height: 1.1;
 }
 
-.logo span {
-    font-size: 0.8rem;
-    font-weight: 400;
-    color: var(--earth-green);
+.logo-badge {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--muted-gold);
+    display: inline-block;
+    padding: 2px 8px;
+    background: rgba(191, 163, 106, 0.1);
+    border: 1px solid var(--muted-gold);
+    border-radius: 4px;
+    margin-top: 4px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    animation: goldPulseSmall 3s infinite ease-in-out;
+}
+
+@keyframes goldPulseSmall {
+    0% {
+        box-shadow: 0 0 5px rgba(191, 163, 106, 0.1);
+    }
+
+    50% {
+        box-shadow: 0 0 10px rgba(191, 163, 106, 0.3);
+        border-color: #D4B87A;
+    }
+
+    100% {
+        box-shadow: 0 0 5px rgba(191, 163, 106, 0.1);
+    }
 }
 
 
@@ -620,9 +644,4 @@ footer a:hover {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
-}
-
-.scroll-top-btn:hover {
-    background: var(--river-blue);
-    transform: translateY(-4px);
 }
